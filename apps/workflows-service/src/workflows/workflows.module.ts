@@ -5,7 +5,7 @@ import { WorkflowsController } from './workflows.controller';
 import { WorkflowsService } from './workflows.service';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Workflow])], // 👈
+  imports: [TypeOrmModule.forFeature([Workflow])],
   controllers: [WorkflowsController],
   providers: [WorkflowsService],
 })
