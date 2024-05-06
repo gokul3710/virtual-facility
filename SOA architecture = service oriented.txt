@@ -9,4 +9,6 @@ custom transporters - docs
 standalone apps
 
 Orchestration vs Choreography for transactions
-rabbitmq
+rabbitmq - acknowlegde manually if fails channel.ack and channel.nack
+
+outbox pattern vs inbox pattern for consistency
