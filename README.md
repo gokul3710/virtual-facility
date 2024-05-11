@@ -1,73 +1,33 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# NestJS Microservices Project
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Welcome to the NestJS microservices project! This repository contains a collection of code and resources related to building microservices-based applications using NestJS.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Table of Contents
 
-## Description
+1. [Introduction](#introduction)
+2. [Key Features](#key-features)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Introduction
 
-## Installation
+This project is a showcase of building microservices architecture with NestJS, focusing on various aspects such as SOA architecture, hybrid apps, health checks, validation pipes, common libraries, message queue systems (NATS and RabbitMQ), communication paradigms (request-response and event-driven), custom transporters, standalone apps, orchestration vs choreography, consistency patterns (outbox vs inbox), and distributed tracing.
 
-```bash
-$ npm install
-```
+It's worth noting that this project draws inspiration and incorporates learnings from the official NestJS course on microservices.
 
-## Running the app
+## Key Features
 
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- **Service-Oriented Architecture (SOA)**: Implementing microservices architecture to build scalable and modular applications.
+- **Hybrid Apps**: Combining monolithic and microservices architectures for flexibility and efficiency.
+- **Health Check**: Implementing health checks for monitoring the status of microservices.
+- **Common Libraries**: Sharing common libraries and utilities across microservices for code reusability.
+- **Message Queue Systems**:
+  - **NATS**: Implementing 1-N and 1-1 message publishing using NATS for efficient communication.
+  - **RabbitMQ**: Ensuring message acknowledgment manually with channel.ack and channel.nack in case of failures.
+- **Communication Paradigms**:
+  - **Request-Response**: Implementing synchronous communication between microservices.
+  - **Event-Driven**: Implementing asynchronous communication using events and message queues.
+- **Standalone Apps**: Developing standalone microservices that can operate independently.
+- **Orchestration vs Choreography**: Understanding different approaches for managing transactions in distributed systems.
+- **Consistency Patterns**:
+  - **Outbox Pattern**: Implementing outbox pattern for maintaining consistency in distributed systems.
+  - **Inbox Pattern**: Understanding the inbox pattern and its implications on consistency.
+- **Distributed Tracing**: Gaining insights into tracing and monitoring microservices interactions for debugging and optimization.
